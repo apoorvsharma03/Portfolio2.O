@@ -11,7 +11,6 @@ const Home = () => {
     useEffect(() => {
         const checkTouchDevice = () => {
           setIsTouchDevice("ontouchstart" in window || navigator.maxTouchPoints > 0);
-          console.log(isTouchDevice)
         };
         checkTouchDevice();
         window.addEventListener("resize", checkTouchDevice);
@@ -46,10 +45,9 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className='w-[70vw]'>
-          <div className={`${helloTransitionDone ? "opacity-100" : "opacity-0"} ${!isTouchDevice && "hover:text-cyan-400"} transition-opacity duration-1000 ease-in-out text-cyan-700 text-center lg:text-2xl md:text-xl text-lg leading-6`}>
-            <span className={`${!isTouchDevice && "hidden"}`}>I am Apoorv Sharma, a software engineer <br /> trying to enhance digital user experiences, <br /> one line of code at a time./span</span>
-            <span className={`${isTouchDevice && "hidden"}`}>I am Apoorv Sharma, a <br />  software engineer trying <br />  to enhance digital user <br />  experiences, one line of <br /> code at a time./span</span>
+        <div className='w-[70vw] flex justify-center'>
+          <div className={`${helloTransitionDone ? "opacity-100" : "opacity-0"} ${isTouchDevice ? "w-[60vw]" : "hover:text-cyan-400 w-[30vw]"} transition-opacity duration-1000 ease-in-out text-cyan-700 text-center lg:text-2xl md:text-xl text-lg leading-6`}>
+            I am Apoorv Sharma, a software engineer trying to enhance digital user experiences, one line of code at a time.
           </div>
         </div>
       </div>
