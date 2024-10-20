@@ -4,7 +4,7 @@ function ScrollToDiv(targetDivId) {
         const navbarHeight = document.getElementById('NAVBAR').offsetHeight;
         const divPosition = targetDiv.getBoundingClientRect().top + window.scrollY;
         window.scrollTo({
-            top: divPosition - navbarHeight, 
+            top: divPosition, 
             behavior: 'smooth',
         })
     }
