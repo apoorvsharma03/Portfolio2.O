@@ -1,0 +1,10 @@
+.mouse-glow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    z-index: 9999; 
+    box-shadow: 0 0 250px 150px rgba(24, 54, 99, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
