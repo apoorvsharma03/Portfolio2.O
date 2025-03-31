@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import { IonIcon } from "@ionic/react";
+import { menuSharp } from "ionicons/icons";
 import "./Hamburger.css"
 import ScrollToDiv from '../ScrollToDiv'
 
@@ -10,7 +12,7 @@ const Hamburger = () => {
     return (
     <div className='flex flex-col items-end text-cyan-700'>
         <div className='flex items-center'>
-            <ion-icon name="menu" clasname="opacity-100 visible" size="large" onClick={() => setmenuOpen(!menuOpen)}/>
+            <IonIcon icon={menuSharp} clasname="opacity-100 visible" size="large" onClick={() => setmenuOpen(!menuOpen)}/>
         </div>
         {menuOpen && 
             <div className="absolute w-fit h-fit top-16 text-right">
