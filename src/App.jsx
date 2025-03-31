@@ -1,4 +1,5 @@
 import React from 'react'
+import Home from './assets/Home';
 import Background from './assets/Background';
 import NavigationMenu from './assets/NavigationMenu';
 import AboutMe from './assets/AboutMe';
@@ -12,6 +13,7 @@ const App = () => {
     <div>
       <Background />
       <NavigationMenu />
+      <Home />
       <AboutMe />
       <Experiences />
       <Projects />
