@@ -28,9 +28,9 @@ const Home = () => {
         <h1 className="text-3xl md:text-5xl animate-gradient font-bold">
           APOORV SHARMA
         </h1>
-        <br />
+        <br className='hidden md:inline'/>
         <h3 className="text-cyan-700 font-style: italic text-lg md:text-xl">developer and sporadic writer</h3>
-        <br />
+        <br/>
         <div>
           <a href="https://www.linkedin.com/in/apoorv-sharma-056b47229/"><IonIcon icon={logoLinkedin} className='text-cyan-700 mr-2 text-3xl'/></a>
           <a href="https://github.com/apoorvsharma03"><IonIcon icon={logoGithub} className='text-cyan-700 mr-2 text-3xl'/></a>
