@@ -4,16 +4,15 @@ import "./Home.css"
 import { IonIcon } from "@ionic/react";
 import { logoLinkedin, logoGithub, logoInstagram } from "ionicons/icons";
 
-
 const Home = () => {
-  const [aboutHeight, setaboutHeight] = useState('fit-content');
+  const [homeHeight, sethomeHeight] = useState('fit-content');
 
   useEffect(() => {
     const updateHeight = () => {
       if (window.innerWidth >= 768) {
-        setaboutHeight('calc(100vh - 5rem)');
+        sethomeHeight('calc(100vh - 5rem)');
       } else {
-        setaboutHeight('fit-content');
+        sethomeHeight('calc(100vh - 5rem)');
       }
     };
     updateHeight();
@@ -23,7 +22,7 @@ const Home = () => {
 
   return (
     <div id='HOME'>
-      <div className={`p-5 md:flex md:flex-col md:w-full md:items-center md:justify-center`} style={{height: aboutHeight}}>
+      <div className={`p-5 flex flex-col w-full items-center justify-center`} style={{height: homeHeight}}>
         <h2 className='text-cyan-700 font-sans text-lg md:text-3xl'>Hi, I'm</h2>
         <h1 className="text-3xl md:text-5xl animate-gradient font-bold">
           APOORV SHARMA
