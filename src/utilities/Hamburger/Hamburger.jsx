@@ -10,7 +10,7 @@ const Hamburger = () => {
     const menuItems = ['ABOUT ME', 'EXPERIENCES', 'PROJECTS', 'SKILLS', 'CONTACT ME'];
   
     return (
-    <div className='flex flex-col items-end text-cyan-700'>
+    <div className='flex flex-col items-end text-cyan-600'>
         <div className='flex items-center'>
             <IonIcon icon={menuSharp} clasname="opacity-100 visible" size="large" onClick={() => setmenuOpen(!menuOpen)}/>
         </div>
@@ -19,7 +19,7 @@ const Hamburger = () => {
                 {menuItems.map((item, index) => (  
                     <div
                         key={item}  
-                        className="menu-item text-[#0a192f] bg-cyan-700 opacity-0 translate-x-full p-2 mb-1 font-medium tracking-wider cursor-pointer"
+                        className="menu-item text-[#0a192f] bg-cyan-600 opacity-0 translate-x-full p-2 mb-1 font-medium tracking-wider cursor-pointer"
                         onClick={() => {
                             setmenuOpen(!menuOpen)
                             ScrollToDiv(item)
