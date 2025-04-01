@@ -28,12 +28,12 @@ const Home = () => {
           APOORV SHARMA
         </h1>
         <br/>
-        <h3 className="text-cyan-700 font-style: italic text-lg md:text-xl">developer and sporadic writer</h3>
+        <h3 className="text-cyan-700 font-style: italic md:text-2xl">software engineer and sporadic writer</h3>
         <br/>
-        <div>
-          <a href="https://www.linkedin.com/in/apoorv-sharma-056b47229/"><IonIcon icon={logoLinkedin} className='text-cyan-700 mr-2 text-3xl'/></a>
-          <a href="https://github.com/apoorvsharma03"><IonIcon icon={logoGithub} className='text-cyan-700 mr-2 text-3xl'/></a>
-          <a href="https://www.instagram.com/26_apoorv/"><IonIcon icon={logoInstagram} className='text-cyan-700 mr-2 text-3xl'/></a>
+        <div className='flex gap-2'>
+          <a href="https://www.linkedin.com/in/apoorv-sharma-056b47229/"><IonIcon icon={logoLinkedin} className='text-cyan-700 text-3xl'/></a>
+          <a href="https://github.com/apoorvsharma03"><IonIcon icon={logoGithub} className='text-cyan-700 text-3xl'/></a>
+          <a href="https://www.instagram.com/26_apoorv/"><IonIcon icon={logoInstagram} className='text-cyan-700 text-3xl'/></a>
         </div>
       </div>
     </div>
