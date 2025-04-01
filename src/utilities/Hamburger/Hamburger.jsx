@@ -15,7 +15,7 @@ const Hamburger = () => {
             <IonIcon icon={menuSharp} clasname="opacity-100 visible" size="large" onClick={() => setmenuOpen(!menuOpen)}/>
         </div>
         {menuOpen && 
-            <div className="absolute w-fit h-fit top-16 text-right">
+            <div className="absolute w-fit h-fit top-16 text-right overflow-hidden">
                 {menuItems.map((item, index) => (  
                     <div
                         key={item}  

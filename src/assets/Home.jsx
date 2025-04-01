@@ -10,9 +10,9 @@ const Home = () => {
   useEffect(() => {
     const updateHeight = () => {
       if (window.innerWidth >= 768) {
-        sethomeHeight('calc(100vh - 5rem)');
+        sethomeHeight('calc(100vh - 4rem)');
       } else {
-        sethomeHeight('calc(100vh - 5rem)');
+        sethomeHeight('calc(100vh - 3.5rem)');
       }
     };
     updateHeight();
