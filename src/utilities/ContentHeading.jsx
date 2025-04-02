@@ -29,7 +29,7 @@ const ContentHeading = ({ children }) => {
   return (
     <h1 
       ref={headingRef}
-      className={`font-semibold text-lg ${isVisible? 'text-[#0a192f]' : 'text-cyan-600'} p-2 relative overflow-hidden`}
+      className={`font-semibold text-lg ${isVisible? 'text-[#0a192f]' : 'text-transparent'} p-2 relative overflow-hidden`}
       style={{
         position: 'relative',
       }}

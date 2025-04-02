@@ -3,7 +3,7 @@ import ContentHeading from '../utilities/ContentHeading'
 
 const AboutMe = () => {
   return (
-    <div id='ABOUT ME' className='flex justify-center pt-4 mb-24'>
+    <div id='ABOUT ME' className='flex justify-center pt-4'>
       <div className='w-[80vw] md:w-[60vw]'>
         <div className='bg-transparent'>
           <ContentHeading>ABOUT ME</ContentHeading>
