@@ -6,9 +6,9 @@ import Cinemareel_Poster from "../utilities/Images/cinemareel.png"
 import Potfolio_Poster from "../utilities/Images/portfolio.png"
 
 const Projects = () => {
-  const Project1 = [Snap_AI_Poster, "https://snapaiproject.netlify.app"]
-  const Project2 = [Potfolio_Poster, ""]
-  const Project3 = [Cinemareel_Poster, "https://cinema-reel.netlify.app/"]
+  const Project1 = ["SNAP AI", Snap_AI_Poster, "https://snapaiproject.netlify.app", "SnapAI lets users generate AI images from prompts and explore a gallery of community-created, AI-generated artworks in various styles."]
+  const Project2 = ["PORTFOLIO", Potfolio_Poster, "", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. At corrupti, dolorem officia eligendi temporibus harum non vel quam voluptatum numquam?"]
+  const Project3 = ["CINEMAREEL", Cinemareel_Poster, "https://cinema-reel.netlify.app/", "CinemaReel is a fully responsive React-based frontend movie database featuring trending movies, a functional search bar, and IMDb redirect links."]
   const Projects = [Project1, Project2, Project3]
 
   return (
