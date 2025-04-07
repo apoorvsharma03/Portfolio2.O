@@ -85,7 +85,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className='md:flex md:flex-col md:flex-1'>
+              <div className='mt-4 md:flex md:flex-col md:flex-1 md:mt-0'>
                 <label htmlFor='message' className='text-sm font-medium text-cyan-600'>Message</label>
                 <textarea 
                   id='message'
