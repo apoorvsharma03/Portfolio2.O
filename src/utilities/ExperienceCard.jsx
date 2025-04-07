@@ -8,7 +8,7 @@ const ExperienceCard = ({ props }) => {
 
   return (
     <div className='flex flex-col mt-4'>
-      <div className={`p-4 rounded-xl ${isTouchable? 'bg-opacity-20 bg-cyan-900 shadow-2xl' : 'hover:bg-opacity-20 hover:bg-cyan-900 hover:shadow-2xl transition-all'}`}>
+      <div className={`p-4 rounded-xl ${isTouchable? 'bg-opacity-20 bg-cyan-900 shadow-2xl' : 'bg-opacity-20 bg-cyan-900 hover:bg-opacity-40 hover:shadow-2xl transition-all'}`}>
         <div className='flex flex-col md:flex-row justify-between'>
           <div className='flex items-center gap-4'>
             <a href={link}>
