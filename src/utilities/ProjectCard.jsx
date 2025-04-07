@@ -37,7 +37,7 @@ const ProjectCard = ({ props, onClick, isFocused }) => {
       </div>
       <div className={`flex flex-col gap-2 items-center justify-center transition-all duration-300 ease-in-out overflow-hidden ${isTouchable? (isFocused && 'mt-4') : (isFocused ? 'w-0 opacity-0' : 'w-72')}`}>
         <img src={props.poster} alt={props.title} className={`rounded-xl`}/>
-        <h1 className='text-cyan-600 font-semibold tracking-wide'>{props.title}</h1>
+        <h1 className={`text-cyan-600 font-semibold tracking-wide transition-all duration-300 ease-in-out ${isTouchable && isFocused ? 'h-0' : 'h-5'}`}>{props.title}</h1>
       </div>
     </div>
   );
