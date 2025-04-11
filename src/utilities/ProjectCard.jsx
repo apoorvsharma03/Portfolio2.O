@@ -27,7 +27,7 @@ const ProjectCard = ({ props, onClick, onMouseEnter, onMouseLeave, isFocused }) 
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      className={`flex flex-col justify-center items-center p-3 rounded-2xl 
+      className={`flex flex-col justify-center items-center p-3 rounded-2xl
       ${isTouchable ? 'bg-opacity-20 bg-cyan-900 shadow-2xl min-w-fit' : 'bg-opacity-20 bg-cyan-900 shadow-xl hover:bg-opacity-30 transition-all duration-300 ease-in-out md:flex-row'} 
       ${isFocused && 'bg-opacity-40 shadow-2xl md:px-4 min-w-80 transition-all duration-300'}`}
     >
