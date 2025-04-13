@@ -54,7 +54,7 @@ const Projects = () => {
       <div ref={projectsRef} className='w-[80vw] md:w-[60vw] flex justify-center md:rounded-2xl md:bg-cyan-900/10 md:backdrop-blur-3xl md:shadow-3xl mt-4'>
         <div className='flex flex-wrap justify-center gap-4 w-full md:my-12'>
           {projectsList.map((project, index) => {
-            const initialX = index % 2 === 0 ? "-100vw" : "100vw";
+            const initialX = index % 2 === 0 ? "-50vw" : "50vw";
             const groupIndex = Math.floor(index / 2);
             const animationStyle = {
               transform: isVisible ? "translateX(0)" : `translateX(${initialX})`,
