@@ -7,7 +7,7 @@ import ScrollToDiv from '../ScrollToDiv'
 
 const Hamburger = () => {
     const [menuOpen, setmenuOpen] = useState(false)
-    const menuItems = ['ABOUT ME', 'EXPERIENCES', 'PROJECTS', 'CONTACT ME'];
+    const menuItems = ['ABOUT ME', 'EXPERIENCES', 'PROJECTS', 'WRITINGS', 'CONTACT ME'];
   
     return (
     <div className='flex flex-col items-end text-cyan-600'>

@@ -5,6 +5,7 @@ import NavigationMenu from './assets/NavigationMenu';
 import AboutMe from './assets/AboutMe';
 import Experiences from './assets/Experiences';
 import Projects from './assets/Projects';
+import Writings from './assets/Writings';
 import Contact from './assets/Contact';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <AboutMe />
       <Experiences />
       <Projects />
+      <Writings />
       <Contact />
     </div>
   )

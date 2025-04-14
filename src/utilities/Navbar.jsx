@@ -2,7 +2,7 @@ import React from 'react'
 import ScrollToDiv from './ScrollToDiv';
 
 const Navbar = () => {
-    const menuItems = ['ABOUT ME', 'EXPERIENCES', 'PROJECTS', 'CONTACT ME'];
+    const menuItems = ['ABOUT ME', 'EXPERIENCES', 'PROJECTS', 'WRITINGS', 'CONTACT ME'];
   return (
     <div className='flex'>
         {menuItems.map((item) => (  
