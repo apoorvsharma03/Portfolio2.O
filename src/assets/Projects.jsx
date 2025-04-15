@@ -52,19 +52,26 @@ const Projects = () => {
         <ContentHeading>PROJECTS</ContentHeading>
       </div>
       <div ref={projectsRef} className='w-[80vw] md:w-[60vw] flex justify-center'>
-        <div className='flex flex-wrap justify-center gap-4 w-full md:mt-4'>
+        <div className='flex flex-wrap justify-center gap-4 w-full mt-4'>
           {projectsList.map((project, index) => {
             const initialX = index % 2 === 0 ? "-50vw" : "50vw";
             const groupIndex = Math.floor(index / 2);
-            const animationStyle = {
+            const animationMD = {
               transform: isVisible ? "translateX(0)" : `translateX(${initialX})`,
               opacity: isVisible ? 1 : 0,
               transition: "transform 1s ease-in-out, opacity 1s ease-in-out",
               transitionDelay: `${groupIndex * 400}ms`
             };
 
+            const animationSM = {
+              transform: isVisible ? "translateY(0)" : "translateY(50vh)",
+              opacity: isVisible ? 1 : 0,
+              transition: "transform 1s ease-in-out, opacity 1s ease-in-out",
+              transitionDelay: `${index * 150}ms`
+            };
+
             return (
-              <div key={project.id} className="transition-all duration-1000 ease-in-out" style={animationStyle}>
+              <div key={project.id} className="transition-all duration-1000 ease-in-out" style={isTouchable ? animationSM : animationMD}>
                 <ProjectCard
                   props={project}
                   onClick={() => isTouchable && handleClickFocus(project)}
