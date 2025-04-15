@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { IonIcon } from "@ionic/react";
 import { closeSharp } from "ionicons/icons";
 
-const WritingCard = ({props}) => {
+const WritingCard = ({props, style}) => {
     const [isVisible, setIsVisible] = useState(false)
     const [isOpened, setIsOpened] = useState(false)
     const [textAlignment, settextAlignment] = useState('left')
@@ -49,8 +49,8 @@ const WritingCard = ({props}) => {
     };
 
     return (
-      <div className='bg-opacity-20 bg-cyan-900 hover:bg-opacity-40 hover:shadow-2xl transition-all duration-400 ease-in-out shadow-2xl w-fit p-2 rounded-2xl' onClick={handleOpen}>
-          <div className='flex gap-2 cursor-pointer'>
+      <div onClick={handleOpen}>
+          <div className='flex gap-2 cursor-pointer bg-opacity-20 bg-cyan-900 hover:bg-opacity-40 hover:shadow-2xl transition-all duration-400 ease-in-out shadow-2xl w-fit p-2 rounded-2xl' style={style}>
             <h2 className='bg-cyan-600 text-[#0a192f] rounded-2xl px-2 font-sem h-fit'>{props.tag}</h2>
             <h2 className='text-cyan-600 font-semibold'>{props.title}</h2>
           </div>
