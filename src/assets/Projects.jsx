@@ -51,7 +51,7 @@ const Projects = () => {
       <div className='bg-transparent w-[80vw] md:w-[60vw] mx-auto'>
         <ContentHeading>PROJECTS</ContentHeading>
       </div>
-      <div ref={projectsRef} className='w-[80vw] md:w-[60vw] flex justify-center'>
+      <div ref={projectsRef} className='w-[80vw] md:w-[60vw] lg:w-[89vw] lgl:w-[80vw] xhhl:w-[77vw] xhl:w-[75vw] 2xl:w-[60vw] flex justify-center'>
         <div className='flex flex-wrap justify-center gap-4 w-full mt-4'>
           {projectsList.map((project, index) => {
             const initialX = index % 2 === 0 ? "-20vw" : "20vw";
@@ -67,7 +67,7 @@ const Projects = () => {
               transform: isVisible ? "translateY(0)" : "translateY(50vh)",
               opacity: isVisible ? 1 : 0,
               transition: "transform 1s ease-in-out, opacity 1s ease-in-out",
-              transitionDelay: `${index * 150}ms`
+              transitionDelay: `${index * 400}ms`
             };
 
             return (

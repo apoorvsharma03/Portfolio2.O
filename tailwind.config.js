@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'lgl': '1080px',
+        'xhhl': '1200px',
+        'xhl': '1230px',
+      },
       animation: {
         float: 'float 8s ease-in-out infinite',
       },
