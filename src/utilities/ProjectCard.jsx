@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import IsTouchable from "./TouchContext";
 
 const ProjectCard = ({ props, onClick, onMouseEnter, onMouseLeave, isFocused }) => {

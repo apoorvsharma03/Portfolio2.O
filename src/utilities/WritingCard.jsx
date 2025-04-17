@@ -55,15 +55,15 @@ const WritingCard = ({props, style}) => {
             <h2 className='text-cyan-600 font-semibold'>{props.title}</h2>
           </div>
           {isVisible && (
-            <div className={`fixed z-10 inset-0 shadow-2xl backdrop-blur-md transition-all duration-150 ease-in ${isOpened ? 'opacity-100' : 'opacity-0'}`} style={{height: writingsHeight, top:navbarHeight}}>
+            <div className={`fixed z-10 inset-0 shadow-2xl backdrop-blur-md transition-all duration-150 ease-in-out ${isOpened ? 'opacity-100' : 'opacity-0'}`} style={{height: writingsHeight, top:navbarHeight}}>
                 <div className='flex flex-col items-center justify-center h-full'>
-                  <div className='w-[90vw] md:w-[65vw] rounded-2xl bg-slate-900 h-[85vh] text-cyan-600' style={{ overflowY: 'auto',scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+                  <div className='w-[90vw] md:w-[65vw] bg-[radial-gradient(circle,_#0e2240,_#0a192f)] h-[85vh] text-cyan-600 border-cyan-600 border-2' style={{ overflowY: 'auto',scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
                     <div className='sticky top-0 bg-cyan-600 text-[#0a192f] justify-between text-xl py-2'>
                       <h1 className='text-center font-semibold'>{props.title}</h1>
-                      <IonIcon icon={closeSharp} onClick={handleClose} className="absolute right-0 top-2 cursor-pointer min-w-12 mt-1 rounded-full transition-all duration-150 ease-in-out"/>
+                      <IonIcon icon={closeSharp} onClick={handleClose} className="absolute right-0 top-2 cursor-pointer min-w-12 mt-1 transition-all duration-150 ease-in-out"/>
                     </div>
                     <br />
-                    <p style={{ whiteSpace: 'pre-line', textAlign: {textAlignment}}} className={`text-${textAlignment} px-8 pb-8`}>
+                    <p style={{ whiteSpace: 'pre-line', textAlign: {textAlignment}}} className={`text-${textAlignment} px-8 pb-4`}>
                       {props.text}
                     </p>
                   </div>
