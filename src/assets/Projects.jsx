@@ -51,12 +51,11 @@ const Projects = () => {
       <div className='bg-transparent w-[80vw] md:w-[60vw] mx-auto'>
         <ContentHeading>PROJECTS</ContentHeading>
       </div>
-      <div ref={projectsRef} className='w-[80vw] md:w-[60vw] lg:w-[89vw] lgl:w-[80vw] xhhl:w-[77vw] xhl:w-[75vw] 2xl:w-[60vw] flex justify-center'>
-        <div className='flex flex-wrap justify-center gap-4 w-full mt-4'>
+      <div ref={projectsRef} className='flex justify-center'>
+        <div className='grid grid-cols-2 gap-4 mt-4'>
           {projectsList.map((project, index) => {
             const initialX = index % 2 === 0 ? "-20vw" : "20vw";
             const groupIndex = Math.floor(index / 2);
-            
             const animationMD = {
               transform: isVisible ? "translateX(0)" : `translateX(${initialX})`,
               opacity: isVisible ? 1 : 0,
@@ -72,7 +71,7 @@ const Projects = () => {
             };
 
             return (
-              <div key={project.id} className="transition-all duration-1000 ease-in-out" style={isTouchable ? animationSM : animationMD}>
+              <div key={project.id} className={`flex ${index % 2 == 0 ? 'justify-end' : 'justify-start'} transition-all duration-1000 ease-in-out`} style={isTouchable ? animationSM : animationMD}>
                 <ProjectCard
                   props={project}
                   onClick={() => isTouchable && handleClickFocus(project)}
