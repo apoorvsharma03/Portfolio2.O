@@ -52,7 +52,7 @@ const Projects = () => {
         <ContentHeading>PROJECTS</ContentHeading>
       </div>
       <div ref={projectsRef} className='flex justify-center'>
-        <div className='grid grid-cols-2 gap-4 mt-4'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4'>
           {projectsList.map((project, index) => {
             const initialX = index % 2 === 0 ? "-20vw" : "20vw";
             const groupIndex = Math.floor(index / 2);
@@ -71,7 +71,7 @@ const Projects = () => {
             };
 
             return (
-              <div key={project.id} className={`flex ${index % 2 == 0 ? 'justify-end' : 'justify-start'} transition-all duration-1000 ease-in-out`} style={isTouchable ? animationSM : animationMD}>
+              <div key={project.id} className={`flex ${index % 2 == 0 ? 'lg:justify-end justify-center' : 'lg:justify-start justify-center'} transition-all duration-1000 ease-in-out`} style={isTouchable ? animationSM : animationMD}>
                 <ProjectCard
                   props={project}
                   onClick={() => isTouchable && handleClickFocus(project)}
