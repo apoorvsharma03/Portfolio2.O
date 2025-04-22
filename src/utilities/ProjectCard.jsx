@@ -23,9 +23,9 @@ const ProjectCard = ({ props, onClick, onMouseEnter, onMouseLeave, isFocused }) 
           <a href={props.link} className="rounded-xl px-3 py-1 font-semibold text-sm text-[#0a192f] bg-cyan-600 hover:bg-[#0a192f] hover:text-cyan-600 transition-all duration-300 ease-in-out">VISIT SITE!</a>
         </div>
       </div>
-      <div className={`flex flex-col gap-2 items-center justify-center transition-all duration-500 ease-in-out overflow-hidden rounded-xl h-[11.5rem]
+      <div className={`flex flex-col gap-2 items-center justify-center transition-all duration-500 ease-in-out overflow-hidden h-[11.5rem]
         ${!isTouchable && (isFocused ? 'w-0 opacity-0 scale-95' : 'w-72 opacity-100 scale-100')}`}>
-        <img src={props.poster} alt={props.title} className={`transition-all duration-300 max-w-80 ${!isTouchable && 'hover:scale-105'}`}/>
+        <img src={props.poster} alt={props.title} className={`transition-all duration-300 max-w-80 ${isFocused ? 'rounded-b-xl' : 'rounded-t-xl'} ${!isTouchable && 'hover:scale-105'}`}/>
         <h1 className={`text-cyan-600 font-semibold tracking-wide transition-all duration-300 ease-in-out overflow-hidden ${isTouchable && isFocused ? 'h-0' : 'h-5'}`}>{props.title}</h1>
       </div>
     </div>
