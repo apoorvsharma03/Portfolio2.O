@@ -56,6 +56,7 @@ const Projects = () => {
           {projectsList.map((project, index) => {
             const initialX = index % 2 === 0 ? "-20vw" : "20vw";
             const groupIndex = Math.floor(index / 2);
+            
             const animationMD = {
               transform: isVisible ? "translateX(0)" : `translateX(${initialX})`,
               opacity: isVisible ? 1 : 0,
